@@ -1,0 +1,6 @@
+myout/?/?.txt
+.DS_Store
+__pycache__
+*.log
+*.pyc
+.keep

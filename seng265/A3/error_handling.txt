@@ -1,0 +1,11 @@
+- User must either provide a file or input lines. Should check that at least something exists.
+- User could provide a null filename. Have to make sure that file is openable; if FileNotFoundError throw an error.
+*** User could give a command but not provide appropriate arguments to the command; type, number, or value of a command could be wrong.***
+For example, a user could give the replace command but provide only one string. I would clean input with a 3rd party input parsing
+library that lets us assert argument bounds, types, and number of arguments all at once.
+- User could reuse the same "Formatter" instance; there might be garbage left inside it from the last time it was used. This
+could be fixed by using a new formatter for each session or clearing class variables after a formatting session.
+- Replace command could have too many arguments; see above.
+- On/off in commands must be properly spelled; see above.
+- Month input needs to have sensible values; eg, 0<=month<=12, 0<=day<=365; see above.
+- All assignment two commands should check that values are sensible. Eg, throw an error if maxwidth is a negative number; see above.

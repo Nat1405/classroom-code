@@ -1,0 +1,8 @@
+- The input array could have zeroes in it. We would have to add a check that
+throws an error if there is a zero in the array.
+- I assumed for this assignment that RLE is never less than half the size of
+the corresponding MTF encoding. In the real world this is a problem; a file with
+an MTF encoding of all 1's would be compressed down to approximately two elements.
+To fix this, I would add a check in "run_length_decode()" that doubles the size
+of the msg2 array with realloc every time we try to access an element outside
+of it's current bounds. 

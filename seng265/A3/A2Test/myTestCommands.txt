@@ -1,0 +1,10 @@
+?fmt off
+?fmt on
+?mrgn 4
+Hello World
+?maxwidth 100
+?maxwidth +50
+?maxwidth +10
+?maxwidth -200
+?cap off
+?cap on

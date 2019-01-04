@@ -1,0 +1,4 @@
+?width 18
+?mrgn 2
+This is some txt
+And some more.
